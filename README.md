@@ -1,10 +1,5 @@
 # 河婆话 河婆客家话
 在线：https://awesometechtool.github.io/Hakka/
-<p align="center">
-  <img src="https://img.shields.io/badge/Language-Hakka%20%7C%20%E5%AE%A2%E5%AE%B6%E8%AF%9D-blue.svg" alt="Language">
-  <img src="https://img.shields.io/badge/Region-Jiexi%20%2C%20Guangdong%20%7C%20%E5%B9%BF%E4%B8%9C%E6%8F%AD%E8%A5%BF-orange.svg" alt="Region">
-  <img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-green.svg" alt="License">
-</p>
 
 ---
 
