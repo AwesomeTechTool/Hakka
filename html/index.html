@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>方言文化数字档案库 - 首页</title>
+    <!-- 引入 Tailwind CSS -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="./tailwindcss.js"></script>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"> -->
+    <link href="./all.min.css" rel="stylesheet" type="text/css">
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 antialiased">
+
+    <div class="flex h-screen overflow-hidden">
+        
+        <!-- 1. 侧边导航栏 (Sidebar) -->
+        <aside class="w-64 bg-slate-900 text-slate-300 hidden md:flex flex-col justify-between shadow-xl">
+            <div>
+                <!-- 品牌 Logo -->
+                <div class="p-6 border-b border-slate-800 flex items-center space-x-3">
+                    <div class="bg-indigo-600 text-white p-2 rounded-lg shadow-md">
+                        <i class="fa-solid fa-volume-high text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-white font-bold tracking-wider text-lg">河婆客家话</h1>
+                        <p class="text-xs text-slate-500">Dialect Archives</p>
+                    </div>
+                </div>
+
+                <!-- 侧边菜单链接 -->
+                <nav class="p-4 space-y-2">
+                    <a href="https://github.com/AwesomeTechTool/Hakka" class="flex items-center space-x-3 px-4 py-3 rounded-xl bg-indigo-600 text-white font-medium shadow-lg shadow-indigo-600/30 transition">
+                        <i class="fa-solid fa-house w-5"></i>
+                        <span>首页概览</span>
+                    </a>
+                    <a href="#categories" class="flex items-center space-x-3 px-4 py-3 rounded-xl hover:bg-slate-800 hover:text-white transition">
+                        <i class="fa-solid fa-layer-group w-5"></i>
+                        <span>领域分类索引</span>
+                    </a>
+                    <a href="https://github.com/AwesomeTechTool/Hakka" class="flex items-center space-x-3 px-4 py-3 rounded-xl hover:bg-slate-800 hover:text-white transition">
+                        <i class="fa-solid fa-book-open w-5"></i>
+                        <span>文化背景</span>
+                    </a>
+                    <a href="https://github.com/AwesomeTechTool/Hakka" class="flex items-center space-x-3 px-4 py-3 rounded-xl hover:bg-slate-800 hover:text-white transition">
+                        <i class="fa-solid fa-circle-info w-5"></i>
+                        <span>关于项目</span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- 侧边栏底部版权提示 -->
+            <div class="p-4 border-t border-slate-800 text-xs text-slate-500 text-center">
+                Hosted on GitHub Pages
+            </div>
+        </aside>
+
+        <!-- 2. 主体内容展示区 -->
+        <main class="flex-1 flex flex-col h-screen overflow-y-auto">
+            
+            <!-- 顶部 Banner / 欢迎区域 -->
+            <div class="bg-gradient-to-r from-indigo-900 via-slate-900 to-indigo-950 text-white p-8 md:p-12 shadow-md">
+                <div class="max-w-4xl">
+                    <span class="bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 text-xs px-3 py-1 rounded-full font-medium uppercase tracking-wider">
+                        非物质文化遗产保护
+                    </span>
+                    <h2 class="text-3xl md:text-5xl font-extrabold mt-3 tracking-tight">留住乡音，传承文脉</h2>
+                    <p class="mt-4 text-slate-300 text-sm md:text-base leading-relaxed">
+                        河婆客家话是客家语的一种方言，主要分布在中国广东省揭阳市揭西县 河婆街道、坪上镇、龙潭镇。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3. 领域分类索引网格 (Categories) -->
+            <div id="categories" class="p-6 md:p-10 max-w-7xl mx-auto w-full flex-1">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                        <i class="fa-solid fa-compass text-indigo-600"></i> 领域分类
+                    </h3>
+                    <span class="text-sm text-slate-500">点击卡片进入对应分类</span>
+                </div>
+
+                <!-- 分类卡片列表 -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- 分类卡片 1：日常起居 -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition border border-slate-100 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4 group-hover:scale-110 transition">
+                                <i class="fa-solid fa-mug-hot"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-800">脏话</h4>
+                            <p class="text-sm text-slate-500 mt-2">涵盖亲人问候、阴阳怪气、祖宗问候等高频生活用语。</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs font-medium text-slate-400">共 0 个发音词条</span>
+                            <a href="entries/detail_01.html" class="text-indigo-600 text-sm font-semibold flex items-center gap-1 group-hover:translate-x-1 transition">
+                                浏览词条 <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    
+
+
+                </div>
+            </div>
+
+            <!-- 底部声明 -->
+            <footer class="text-center py-6 text-xs text-slate-400 border-t border-slate-200">
+                &copy; 2026 方言文化数字档案库. All rights reserved.
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>
