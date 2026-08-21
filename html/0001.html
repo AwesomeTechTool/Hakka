@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>词条详情 - 方言数字档案</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 font-sans text-slate-800">
+
+    <div class="max-w-3xl mx-auto px-4 py-12">
+        
+        <!-- 返回按钮 -->
+        <a href="../index.html" class="inline-flex items-center gap-2 text-sm text-indigo-600 font-semibold mb-6 hover:underline">
+            <i class="fa-solid fa-arrow-left"></i> 返回首页索引
+        </a>
+
+        <!-- 词条卡片主体 -->
+        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-slate-100">
+            
+            <!-- 标签与类别 -->
+            <div class="flex items-center justify-between">
+                <span class="bg-amber-100 text-amber-800 text-xs px-3 py-1 rounded-full font-semibold">播客</span>
+                <span class="text-slate-400 text-sm">条目编号：#0001</span>
+            </div>
+
+            <!-- 方言主字 / 词 -->
+            <h1>方言与美食（音频） 蔡怡婷：揭西擂茶——擂出来的人间美味（揭西坪上镇新榕村）</h1>
+            
+            <!-- 拼音/国际音标转写 -->
+            <p class="text-indigo-600 font-mono text-lg mt-2">[ 暂无 ] <span class="text-slate-400 text-sm ml-2">（本地拟音拼写）</span></p>
+
+            <!-- 发音控制播放区域 -->
+            <div class="mt-8 p-6 bg-slate-50 rounded-2xl border border-slate-200/60 flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <button onclick="playAudio('0001')" id="playBtn" class="w-14 h-14 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full flex items-center justify-center text-xl shadow-lg shadow-indigo-600/30 transition transform active:scale-95">
+                        <i class="fa-solid fa-play ml-0.5" id="playIcon"></i>
+                    </button>
+                    <div>
+                        <h4 class="font-bold text-slate-800">标准发音示范</h4>
+                        <p class="text-xs text-slate-500">点击左侧按钮聆听录音</p>
+                    </div>
+                </div>
+                <!-- HTML5 标准音频标签（隐藏或精简展示） -->
+                <audio id="0001" src="./audio/0001.m4a"></audio>
+            </div>
+
+            <!-- 详细释义说明 -->
+            <div class="mt-8 space-y-6 text-slate-600 leading-relaxed border-t border-slate-100 pt-8">
+                <div>
+                    <h3 class="text-slate-900 font-bold text-lg mb-1">【释义】</h3>
+                    <!-- <p>日常问候语，相当于普通话的“你吃过饭了吗？”，在当地亲友见面时最常用的寒暄用语。</p> -->
+                </div>
+                <div>
+                    <h3 class="text-slate-900 font-bold text-lg mb-1">【语境与例句】</h3>
+                    <blockquote class="border-l-4 border-indigo-500 pl-4 italic text-slate-500">
+                        <!-- “张大爷，吃了吗？” “刚吃了嘞！” -->
+                    </blockquote>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 简单的音频控制脚本 -->
+    <script>
+        // const audio = document.getElementById('dialectAudio');
+        const playBtn = document.getElementById('playBtn');
+        const playIcon = document.getElementById('playIcon');
+
+        function playAudio(audioId) {
+            const audio = document.getElementById(audioId);
+            if (audio.paused) {
+                audio.play();
+                playIcon.classList.remove('fa-play');
+                playIcon.classList.add('fa-pause');
+            } else {
+                audio.pause();
+                playIcon.classList.remove('fa-pause');
+                playIcon.classList.add('fa-play');
+            }
+        }
+
+        // audio.onended = function() {
+        //     playIcon.classList.remove('fa-pause');
+        //     playIcon.classList.add('fa-play');
+        // };
+    </script>
+
+</body>
+</html>
