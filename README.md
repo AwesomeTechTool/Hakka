@@ -2,9 +2,9 @@
 在线：https://awesometechtool.github.io/Hakka/
 
 ---
-录制：ffmpeg
-编辑：obsidian
-文档格式：md html
+录制：ffmpeg  
+编辑：obsidian  
+文档格式：md html  
 音频：mp3 m4a
 
 ---
